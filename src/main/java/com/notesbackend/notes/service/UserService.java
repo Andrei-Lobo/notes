@@ -1,10 +1,12 @@
 package com.notesbackend.notes.service;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import com.notesbackend.notes.repository.UserRepository;
 import com.notesbackend.notes.model.User;;
 
+@Service
 public class UserService {
     private final UserRepository userRepo;
     private final BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();

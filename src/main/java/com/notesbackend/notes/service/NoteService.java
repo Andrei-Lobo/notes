@@ -28,7 +28,7 @@ public class NoteService {
 
     public List<Note> getNotesByUser(Long userId){
         User user = userRepository.findById(userId).orElseThrow();
-        return noteRepository.findbyUser(user);
+        return noteRepository.findByUser(user);
     }
 
     public Note updateNote(Long noteId, String title, String content){

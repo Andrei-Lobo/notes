@@ -9,6 +9,6 @@ import com.notesbackend.notes.model.Note;;
 
 public interface NoteRepository extends JpaRepository<Note, Long>{
 
-    List<Note> findbyUser(User user);
+    List<Note> findByUser(User user);
     
 }
