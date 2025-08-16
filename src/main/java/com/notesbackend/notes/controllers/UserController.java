@@ -11,7 +11,7 @@ import com.notesbackend.notes.model.User;
 import com.notesbackend.notes.service.UserService;
 
 @RestController
-@RequestMapping
+@RequestMapping("/auth")
 @CrossOrigin(origins = "*")
 public class UserController {
     private final UserService uService;
